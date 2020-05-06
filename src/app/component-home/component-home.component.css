@@ -1,0 +1,19 @@
+.heading-size {
+  height: 100vh;
+}
+
+.heading {
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+.sub-heading {
+  font-size: 1rem;
+  word-spacing: 3px;
+}
+
+.designation {
+  text-transform: uppercase;
+  word-spacing: 5px;
+  letter-spacing: 2px;
+}
