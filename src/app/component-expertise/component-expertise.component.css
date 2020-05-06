@@ -1,0 +1,9 @@
+.text-pink{
+    color: var(--light-purple);
+}
+.heading{
+    font-size: 1.5rem;
+    word-spacing: 5px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
