@@ -1,1 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
+:root{
+    --purple: #39375b;
+    --light-purple: #745c97;
+    --pink: #d597ce;
+    --peach: #f5b0cb;
+}
+.bg-purple{
+    background: var(--purple);
+}
+.bg-light-purple{
+    background: var(--light-purple);
+}
+.bg-pink{
+    background: var(--pink);
+}
+.bg-peach{
+    background: var(--peach);
+}
