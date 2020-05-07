@@ -1,4 +1,4 @@
-<app-component-navbar></app-component-navbar>
+<app-component-navbar (ev)='scroll($event)'></app-component-navbar>
 
 <div class="container heading-size center-pos">
   <div class="row">
@@ -15,8 +15,8 @@
   </div>
 </div>
 
-<app-component-about></app-component-about>
-<app-component-expertise></app-component-expertise>
+<app-component-about id="aboutId"></app-component-about>
+<app-component-expertise id="skillsId"></app-component-expertise>
 
 <div class="container-fluid">
   <div class="row bg-light">
@@ -36,5 +36,5 @@
   </div>
 </div>
 
-<app-component-contact></app-component-contact>
+<app-component-contact id="contactId"></app-component-contact>
 <app-component-footer></app-component-footer>

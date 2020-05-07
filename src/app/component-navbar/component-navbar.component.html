@@ -11,16 +11,16 @@
   <div class="collapse navbar-collapse" id="collapsibleNavbar">
     <ul class="navbar-nav ml-auto">
       <li class="nav-item mr-4">
-        <a class="nav-link text-light" href="#">About Me</a>
+        <a class="nav-link text-light" (click)="sendData('about')">About Me</a>
       </li>
       <li class="nav-item mr-4">
-        <a class="nav-link text-light" href="#">Work</a>
+        <a class="nav-link text-light">Work</a>
       </li>
       <li class="nav-item mr-4">
-        <a class="nav-link text-light" href="#">Skills</a>
+        <a class="nav-link text-light" (click)="sendData('skills')">Skills</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link text-light" href="#">Contact</a>
+        <a class="nav-link text-light" (click)="sendData('contact')">Contact</a>
       </li>
     </ul>
   </div>
