@@ -8,6 +8,7 @@ import { ComponentNavbarComponent } from './component-navbar/component-navbar.co
 import { ComponentAboutComponent } from './component-about/component-about.component';
 import { ComponentExpertiseComponent } from './component-expertise/component-expertise.component';
 import { ComponentContactComponent } from './component-contact/component-contact.component';
+import { ComponentFooterComponent } from './component-footer/component-footer.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { ComponentContactComponent } from './component-contact/component-contact
     ComponentNavbarComponent,
     ComponentAboutComponent,
     ComponentExpertiseComponent,
-    ComponentContactComponent
+    ComponentContactComponent,
+    ComponentFooterComponent
   ],
   imports: [
     BrowserModule,

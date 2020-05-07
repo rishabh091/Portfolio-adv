@@ -25,11 +25,12 @@
   padding: 10px;
   color: white;
   font-weight: bold;
+  cursor: pointer;
   font-size: 0.9rem;
 }
 
 .btn-grad:hover {
-  background: linear-gradient(32deg, var(--light-purple), var(--purple), var(--pink));
+  background: linear-gradient(32deg, var(--light-purple), var(--purple), var(--pink), var(--peach));
   background-size: 800% 800%;
   animation: discoHover 3s ease infinite;
 }

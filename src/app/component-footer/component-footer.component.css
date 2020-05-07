@@ -1,0 +1,12 @@
+.footer-size{
+    height: 30vh;
+    flex-direction: column;
+}
+.line-through{
+    opacity: 0.5;
+    text-decoration: line-through;
+}
+.punch{
+    font-size: 0.8rem;
+    font-weight: bold;
+}
