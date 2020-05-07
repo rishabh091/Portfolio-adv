@@ -10,3 +10,11 @@
     font-size: 0.8rem;
     font-weight: bold;
 }
+.btn-outline-purple{
+    border: 2px solid var(--light-purple);
+    font-size: 0.8rem;
+}
+.btn-outline-purple:hover{
+    color: white;
+    background: var(--light-purple);
+}

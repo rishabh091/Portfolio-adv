@@ -27,6 +27,7 @@
   letter-spacing: 1px;
   word-spacing: 5px;
   cursor: pointer;
+  text-decoration: none;
   transition-duration: 0.2s;
   transition-property: all;
 }

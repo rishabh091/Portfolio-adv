@@ -1,4 +1,5 @@
 import { Component, OnInit, AfterViewInit } from '@angular/core';
+import { ScrollService } from '../service-scroll/scroll.service';
 
 @Component({
   selector: 'app-component-home',
@@ -11,7 +12,7 @@ export class ComponentHomeComponent implements OnInit, AfterViewInit {
   skills: any;
   contact: any;
 
-  constructor() { }
+  constructor(private scroll: ScrollService) { }
 
   ngOnInit() {
   }
@@ -20,22 +21,8 @@ export class ComponentHomeComponent implements OnInit, AfterViewInit {
     this.about = document.getElementById('aboutId').offsetTop;
     this.skills = document.getElementById('skillsId').offsetTop;
     this.contact = document.getElementById('contactId').offsetTop;
-  }
 
-  scroll(event) {
-    if(event === 'about') {
-      this.scrollTo(this.about);
-    }
-    if(event === 'skills') {
-      this.scrollTo(this.skills);
-    }
-    if(event === 'contact') {
-      this.scrollTo(this.contact);
-    }
-  }
-
-  scrollTo(value) {
-    window.scrollTo(0, value);
+    this.scroll.set(this.about, this.skills, this.contact);
   }
 
 }

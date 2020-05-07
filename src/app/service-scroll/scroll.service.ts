@@ -42,4 +42,18 @@ export class ScrollService {
       }
     }, 0.25);
   }
+
+  toTop(){
+    let current = window.pageYOffset;
+
+    const interval = setInterval(() => {
+      if(current <= 0){
+        clearInterval(interval);
+      }
+      else{
+        current -= 50;
+        window.scrollTo(0, current);
+      }
+    }, 0.25);
+  }
 }

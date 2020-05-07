@@ -1,0 +1,130 @@
+.parallax {
+  height: 100vh;
+  background-image: url(../../assets/bg/christian-perner-UKLIuV8rAks-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.heading {
+  height: inherit;
+}
+
+.heading-text {
+  text-transform: uppercase;
+}
+
+.work {
+  letter-spacing: 3px;
+  word-spacing: 5px;
+}
+
+.text-purple {
+  color: var(--purple);
+}
+
+.projects {
+  position: relative;
+  background: white;
+  z-index: 10;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.project-name {
+  font-size: 2rem;
+}
+
+.sub-heading {
+  font-size: 0.8rem;
+}
+
+.ss {
+  height: 50vh;
+  object-fit: contain;
+}
+
+.holder {
+  overflow: hidden;
+  height: 70vh;
+  position: relative;
+  z-index: 10;
+  padding: 0px;
+  background: white;
+}
+
+.back-head {
+  position: absolute;
+  font-size: 15rem;
+  left: 35%;
+  font-weight: bold;
+  color: #f4f4f4;
+}
+
+.another-head {
+  position: absolute;
+  font-size: 10rem;
+  font-weight: bold;
+  left: 30%;
+  opacity: 0.5;
+  z-index: 12;
+}
+
+.github-area {
+  background: white;
+  position: relative;
+  z-index: 10;
+}
+
+.git-icon {
+  height: 50px;
+}
+
+.btn-back{
+    position: fixed;
+    left: 50px;
+    top: 50px;
+    font-size: 2rem;
+    cursor: pointer;
+}
+.btn-back:hover{
+    background: rgba(0, 0, 0, 0.3);
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 800px) {
+  .back-head {
+    position: absolute;
+    font-size: 5rem;
+    left: 35%;
+    font-weight: bold;
+    color: #f4f4f4;
+    top: 10px;
+  }
+
+  .another-head {
+    position: absolute;
+    font-size: 4rem;
+    font-weight: bold;
+    left: 30%;
+    opacity: 0.5;
+    z-index: 12;
+  }
+
+  .holder {
+    overflow: hidden;
+    height: 30vh;
+    position: relative;
+    z-index: 10;
+    padding: 0px;
+    background: white;
+  }
+}

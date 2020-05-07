@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ScrollService } from '../service-scroll/scroll.service';
 
 @Component({
   selector: 'app-component-about',
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ComponentAboutComponent implements OnInit {
 
-  constructor() { }
+  constructor(private scroll: ScrollService) { }
 
   ngOnInit() {
+  }
+
+  contact(value) {
+    this.scroll.scroll(value);
   }
 
 }
