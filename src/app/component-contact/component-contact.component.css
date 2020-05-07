@@ -1,0 +1,24 @@
+.text-purple {
+  color: var(--purple);
+}
+
+.width-full {
+  width: 100%;
+}
+
+.icon-size {
+  height: 40px;
+  opacity: 0.8;
+  transition-duration: 0.5s;
+  transition-property: all;
+}
+
+.icon-size:hover {
+  opacity: 1;
+}
+
+@media screen and (max-width: 800px) {
+  .display-4 {
+    font-size: 2.5rem;
+  }
+}
