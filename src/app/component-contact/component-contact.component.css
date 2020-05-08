@@ -13,6 +13,27 @@
   transition-property: all;
 }
 
+.alert-sub-heading {
+  font-size: 1.2rem;
+}
+
+.animate-alert {
+  animation-name: opainc;
+  animation-duration: 0.5s;
+  animation-iteration-count: once;
+  animation-play-state: running;
+}
+
+@keyframes opainc {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
 .icon-size:hover {
   opacity: 1;
 }

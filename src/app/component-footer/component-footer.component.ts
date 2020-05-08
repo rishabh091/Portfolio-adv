@@ -8,7 +8,11 @@ import { ScrollService } from '../service-scroll/scroll.service';
 })
 export class ComponentFooterComponent implements OnInit {
 
-  constructor(private service: ScrollService) { }
+  service;
+
+  constructor(private s: ScrollService) {
+    this.service = s;
+   }
 
   ngOnInit() {
   }
