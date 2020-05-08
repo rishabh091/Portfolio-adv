@@ -18,16 +18,18 @@
       </div>
     </div>
     <div class="col-xl-6">
-      <div class="form-group">
-        <input type="text" class="form-control text-muted" placeholder="Your Name" />
-      </div>
-      <div class="form-group mt-3">
-        <input type="email" class="form-control text-muted" placeholder="Email" />
-      </div>
-      <div class="form-group mt-5">
-        <textarea class="form-control text-muted" placeholder="Message" rows="5"></textarea>
-      </div>
-      <button type="button" class="btn btn-dark rounded-0 width-full mt-3 text-center">Send Message</button>
+      <form action="#" method="POST">
+        <div class="form-group">
+          <input type="text" class="form-control text-muted" placeholder="Your Name" name="name" required/>
+        </div>
+        <div class="form-group mt-3">
+          <input type="email" class="form-control text-muted" placeholder="Email" name="email" required/>
+        </div>
+        <div class="form-group mt-5">
+          <textarea class="form-control text-muted" placeholder="Message" rows="5" name="message" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-dark rounded-0 width-full mt-3 text-center">Send Message</button>
+      </form>
     </div>
   </div>
 </div>
