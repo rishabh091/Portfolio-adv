@@ -12,7 +12,7 @@ export class ComponentHomeComponent implements OnInit, AfterViewInit {
   skills: any;
   contact: any;
 
-  constructor(private scroll: ScrollService) { }
+  constructor(public scroll: ScrollService) { }
 
   ngOnInit() {
   }
