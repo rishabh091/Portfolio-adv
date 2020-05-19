@@ -38,6 +38,10 @@
 .project-name {
   font-size: 2rem;
 }
+.project-name:hover{
+  color: var(--pink);
+  text-decoration: underline;
+}
 
 .sub-heading {
   font-size: 0.8rem;
