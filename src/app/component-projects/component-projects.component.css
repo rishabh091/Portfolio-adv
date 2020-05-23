@@ -52,38 +52,6 @@
   object-fit: contain;
 }
 
-.holder {
-  overflow: hidden;
-  height: 70vh;
-  position: relative;
-  z-index: 10;
-  padding: 0px;
-  background: white;
-}
-
-.back-head {
-  position: absolute;
-  font-size: 15rem;
-  left: 35%;
-  font-weight: bold;
-  color: #f4f4f4;
-}
-
-.another-head {
-  position: absolute;
-  font-size: 10rem;
-  font-weight: bold;
-  left: 30%;
-  opacity: 0.5;
-  z-index: 12;
-}
-
-.github-area {
-  background: white;
-  position: relative;
-  z-index: 10;
-}
-
 .git-icon {
   height: 50px;
 }
@@ -104,31 +72,6 @@ a{
     text-decoration: none;
 }
 
-@media screen and (max-width: 800px) {
-  .back-head {
-    position: absolute;
-    font-size: 5rem;
-    left: 35%;
-    font-weight: bold;
-    color: #f4f4f4;
-    top: 10px;
-  }
-
-  .another-head {
-    position: absolute;
-    font-size: 4rem;
-    font-weight: bold;
-    left: 30%;
-    opacity: 0.5;
-    z-index: 12;
-  }
-
-  .holder {
-    overflow: hidden;
-    height: 30vh;
-    position: relative;
-    z-index: 10;
-    padding: 0px;
-    background: white;
-  }
+.github-link{
+  font-size: 1.2rem;
 }
