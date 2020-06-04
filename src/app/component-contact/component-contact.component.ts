@@ -16,6 +16,7 @@ export class ComponentContactComponent implements OnInit {
   };
 
   showAlert = false;
+  showSpinner = false;
 
   constructor(private httpClient: HttpClient) { }
 
@@ -36,9 +37,13 @@ export class ComponentContactComponent implements OnInit {
   //send form
   sendMessage() {
     const url = 'https://rishabh-dev-portfolio.herokuapp.com/mail';
+    this.showSpinner = true;
 
     this.httpClient.post(url, this.data).subscribe((res: any) => {
       this.showAlert = true;
+      this.showSpinner = false;
+    }, error => {
+      this.showSpinner = false;
     });
   }
 
