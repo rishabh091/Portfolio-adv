@@ -3,14 +3,14 @@
 :root {
   /* CSS color variables for default mode*/
   --super-black: #082032;
-  --normal-black: #2C394B;
-  --just-black: #334756;
   /* Accent colors */
   --blue: #185ADB;
   --green: #28FFBF;
   --red: #DA0037;
   --voilet: #5C33F6;
   --purple: #A239EA;
+
+  --text-color: white;
 }
 
 /* Setting default font as Roboto */
@@ -20,4 +20,9 @@
 
 .raleway {
   font-family: 'Raleway', sans-serif;
+}
+
+.black {
+  background-color: var(--super-black);
+  color: var(--white);
 }
