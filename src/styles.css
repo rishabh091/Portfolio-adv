@@ -1,4 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
+
 :root {
   /* CSS color variables for default mode*/
   --super-black: #082032;
@@ -10,4 +11,13 @@
   --red: #DA0037;
   --voilet: #5C33F6;
   --purple: #A239EA;
+}
+
+/* Setting default font as Roboto */
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+.raleway {
+  font-family: 'Raleway', sans-serif;
 }
