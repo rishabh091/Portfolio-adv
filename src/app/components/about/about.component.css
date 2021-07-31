@@ -1,0 +1,73 @@
+.custom-border {
+    width: 100px;
+    height: 5px;
+    border-radius: 2px;
+
+    background-image: linear-gradient(to right, var(--green), var(--purple), var(--voilet), var(--blue));
+    background-size: 200% 200%;
+
+    position: relative;
+    animation: border-dance 3s ease-in-out 0s infinite alternate, disco 6s ease infinite;
+}
+.dot {
+    height: 10px;
+    width: 10px;
+
+    background-image: linear-gradient(to right, var(--purple), var(--voilet), var(--blue));
+    background-size: 200% 200%;
+    border-radius: 50%;
+
+    animation: dot-illusion 3s ease -2.2s infinite alternate, disco 6s ease infinite;
+}
+.my-image {
+    height: 100%;
+    width: 100%;
+
+    object-fit: cover;
+    object-position: left;
+}
+.about-me-para {
+    font-size: 1.5rem;
+}
+
+@media screen and (max-width: 700px) {
+    .about > div > h1 {
+        font-size: 3.2rem;
+    }
+}
+@media screen and (max-width: 320px) {
+    .about > div > h1 {
+        font-size: 2rem;
+    }
+}
+
+@keyframes disco {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes border-dance {
+    from {
+        transform: translateX(0%);
+    }
+    to {
+        transform: translateX(500%);
+        width: 30px;
+    }
+}
+
+@keyframes dot-illusion {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
