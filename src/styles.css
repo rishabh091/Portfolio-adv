@@ -25,6 +25,10 @@
   background-color: var(--super-black);
   color: var(--white);
 }
+.green {
+  background-color: var(--green);
+  /* color: var(--white); */
+}
 .text-voilet {
   color: var(--voilet);
 }
@@ -33,4 +37,8 @@
 }
 .text-purple {
   color: var(--purple);
+}
+
+div {
+  cursor: default;
 }
