@@ -1,0 +1,50 @@
+.c-heading {
+    letter-spacing: 3px;
+    word-spacing: 5px;
+    font-size: 2.5rem;
+}
+.carousel-item .row {
+    height: 80vh;
+}
+.carousel-item img {
+    height: 50vh;
+    width: 100%;
+    object-fit: contain;
+}
+.carousel-item .row .col-lg-6 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.badge {
+    font-size: 1rem;
+    padding: 1em;
+    margin: 1em 0;
+}
+
+@media screen and (max-width: 700px) {
+    .tech>h1 {
+        font-size: 3.2rem;
+    }
+    .carousel-item img {
+        height: 30vh;
+        width: 100%;
+    }
+    .carousel-item .row {
+        margin-top: 5vh;
+        height: 100%;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .tech>h1 {
+        font-size: 2rem;
+    }
+    .carousel {
+        margin-top: 8vh;
+    }
+    .c-heading {
+        font-size: 1.5rem;
+    }
+}
