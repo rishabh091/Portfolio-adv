@@ -4,7 +4,7 @@
   /* CSS color variables for default mode*/
   --super-black: #171717;
   /* Accent colors */
-  --blue: #185ADB;
+  --blue: #00C1D4;
   --green: #28FFBF;
   --voilet: #5C33F6;
   --purple: #A239EA;
@@ -38,7 +38,19 @@
 .text-purple {
   color: var(--purple);
 }
+.text-blue {
+  color: var(--blue);
+}
 
 div {
   cursor: default;
+}
+
+.side-padding {
+  padding: 0 10%;
+}
+@media screen and (max-width: 700px) {
+  .side-padding {
+    padding: 0 5%;
+  }
 }
