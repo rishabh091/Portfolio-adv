@@ -1,0 +1,26 @@
+.experience-heading {
+    font-size: 20rem;
+    font-weight: bolder;
+
+    background-image: url('https://media3.giphy.com/media/26AHz7xlRTuEMCPPa/giphy.gif?cid=ecf05e47eihuexbvh0uqauposz19ouytl9m1oqa963bvondb&rid=giphy.gif&ct=g');
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-font-smoothing: antialiased;
+}
+.experience-subheading {
+    font-size: 3.2rem;
+}
+.experience-text {
+    word-spacing: 10px;
+    letter-spacing: 4px;
+}
+
+@media screen and (max-width: 700px) {
+    .experience-heading {
+        font-size: 10rem;
+    }
+    .experience-subheading {
+        font-size: 2rem;
+    }
+}

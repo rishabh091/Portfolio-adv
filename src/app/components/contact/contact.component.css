@@ -1,0 +1,29 @@
+.contact-us {
+    padding: 0 10%;
+}
+.social-accounts {
+    font-size: 2rem;
+}
+.icon-size {
+    height: 10vh;
+    width: 10vh;
+    border-radius: 50%;
+
+    object-fit: contain;
+}
+@media screen and (max-width: 700px) {
+    .contact-us > h1 {
+        font-size: 3.2rem;
+    }
+    .contact-us {
+        padding: 0 5%;
+    }
+    .social-accounts {
+        font-size: 1.5rem;
+    }
+}
+@media screen and (max-width: 320px) {
+    .contact-us > h1 {
+        font-size: 2rem;
+    }
+}

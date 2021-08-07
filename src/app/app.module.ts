@@ -4,24 +4,21 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ComponentHomeComponent } from './component-home/component-home.component';
-import { ComponentNavbarComponent } from './component-navbar/component-navbar.component';
-import { ComponentAboutComponent } from './component-about/component-about.component';
-import { ComponentExpertiseComponent } from './component-expertise/component-expertise.component';
-import { ComponentContactComponent } from './component-contact/component-contact.component';
-import { ComponentFooterComponent } from './component-footer/component-footer.component';
-import { ComponentProjectsComponent } from './component-projects/component-projects.component';
+import { HomeComponent } from './components/home/home.component';
+import { AboutComponent } from './components/about/about.component';
+import { ContactComponent } from './components/contact/contact.component';
+import { ExperienceComponent } from './components/experience/experience.component';
+import { TechComponent } from './components/tech/tech.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    ComponentHomeComponent,
-    ComponentNavbarComponent,
-    ComponentAboutComponent,
-    ComponentExpertiseComponent,
-    ComponentContactComponent,
-    ComponentFooterComponent,
-    ComponentProjectsComponent
+    HomeComponent,
+    AboutComponent,
+    ContactComponent,
+    ExperienceComponent,
+    TechComponent
   ],
   imports: [
     BrowserModule,

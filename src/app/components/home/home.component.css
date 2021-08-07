@@ -1,0 +1,230 @@
+.headline {
+    min-width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+
+    z-index: -1;
+}
+
+.headline-body {
+    position: fixed;
+    top: 25%;
+    left: 10%;
+}
+
+.headline #ball-1 {
+    height: 70vh;
+    width: 70vh;
+    border-radius: 50%;
+    background-color: var(--red);
+    opacity: 0.2;
+    position: fixed;
+    top: 10%;
+    left: 50%;
+    animation-name: ball-1-animation;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+
+.headline #ball-2 {
+    height: 50vh;
+    width: 50vh;
+    border-radius: 50%;
+    background-color: var(--purple);
+    opacity: 0.3;
+    position: fixed;
+    top: 15%;
+    left: 30%;
+    animation-name: ball-2-animation;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+
+.headline #ball-3 {
+    height: 30vh;
+    width: 30vh;
+    border-radius: 50%;
+    background-color: var(--voilet);
+    opacity: 0.4;
+    position: fixed;
+    top: 50%;
+    left: 40%;
+    animation-name: ball-3-animation;
+    animation-duration: 18s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+
+.headline>div>h1 {
+    letter-spacing: 8px;
+    font-size: 5rem;
+}
+
+.headline>div>h2 {
+    letter-spacing: 3px;
+    word-spacing: 8px;
+}
+
+@keyframes ball-1-animation {
+    0% {
+        top: 10%;
+        left: 50%;
+    }
+    25% {
+        top: 12%;
+        left: 48%;
+    }
+    50% {
+        top: 8%;
+        left: 52%;
+    }
+    75% {
+        top: 10%;
+        left: 48%;
+    }
+    100% {
+        top: 12%;
+        left: 52;
+    }
+}
+
+@keyframes ball-2-animation {
+    0% {
+        top: 15%;
+        left: 30%;
+    }
+    25% {
+        top: 12%;
+        left: 34%;
+    }
+    50% {
+        top: 8%;
+        left: 28%;
+    }
+    75% {
+        top: 14%;
+        left: 26%;
+    }
+    100% {
+        top: 15%;
+        left: 32%;
+    }
+}
+
+@keyframes ball-3-animation {
+    0% {
+        top: 50%;
+        left: 40%;
+    }
+    25% {
+        top: 54%;
+        left: 38%;
+    }
+    50% {
+        top: 52%;
+        left: 44%;
+    }
+    75% {
+        top: 54%;
+        left: 36%;
+    }
+    100% {
+        top: 50%;
+        left: 42%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .headline>div>h1 {
+        font-size: 3.2rem;
+    }
+    .headline>div>h2 {
+        font-size: 1.5rem;
+    }
+    .headline #ball-1 {
+        left: 20%;
+        height: 60vh;
+        width: 60vh;
+    }
+    .headline #ball-2 {
+        left: 20%;
+        top: 0%;
+        height: 20vh;
+        width: 20vh;
+    }
+    .headline #ball-3 {
+        left: 0%;
+        height: 40vh;
+        width: 40vh;
+    }
+    .headline-body {
+        position: fixed;
+        top: 25%;
+        left: 5%;
+    }
+}
+@media screen and (max-width: 320px) {
+    .headline>div>h1 {
+        font-size: 2rem;
+    }
+    .headline>div>h2 {
+        font-size: 1.2rem;
+    }
+}
+@media screen and (max-height: 400px) {
+    .headline {
+        height: 200vh;
+    }
+    .headline-body {
+        position: fixed;
+        top: 10%;
+        left: 5%;
+    }
+}
+
+/* Arrow animations */
+
+.arrow {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.arrow span {
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-bottom: 2px solid var(--super-black);
+    border-right: 2px solid var(--super-black);
+    transform: rotate(45deg);
+    margin: -10px;
+    animation: animate 2s infinite;
+}
+
+.arrow span:nth-child(2) {
+    animation-delay: -0.2s;
+}
+
+.arrow span:nth-child(3) {
+    animation-delay: -0.4s;
+}
+
+@keyframes animate {
+    0% {
+        opacity: 0;
+        transform: rotate(45deg) translate(-20px, -20px);
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: rotate(45deg) translate(20px, 20px);
+    }
+}
