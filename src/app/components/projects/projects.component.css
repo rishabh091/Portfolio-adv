@@ -1,0 +1,41 @@
+.project-head {
+    background: url('../../../assets/bg/849790.gif');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: fill;
+}
+
+.project-head div:first-child {
+    background: rgba(0, 0, 0, 0.8);
+    width: 100%;
+}
+
+.project-heading {
+    font-size: 20rem;
+    font-weight: bolder;
+    background-image: url('https://64.media.tumblr.com/6cb0ae44278156aa660d95d55df340de/tumblr_nz14o7t0Z61skcd7fo1_500.gifv');
+    background-repeat: repeat;
+    background-position: center;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-font-smoothing: antialiased;
+}
+
+.project-subheading {
+    font-size: 3.2rem;
+}
+
+@media screen and (max-width: 1024px) {
+    .project-head {
+        background-position: 50%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .project-heading {
+        font-size: 10rem;
+    }
+    .project-subheading {
+        font-size: 2rem;
+    }
+}
