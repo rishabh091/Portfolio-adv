@@ -24,6 +24,23 @@
 .project-subheading {
     font-size: 3.2rem;
 }
+.github-link {
+    height: 10vh;
+    width: 250px;
+
+    background-color: var(--purple);
+    color: white;
+    font-size: 1.2rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 15vh;
+}
+.github-link:hover {
+    box-shadow: 0 0 50px var(--purple);
+}
 
 @media screen and (max-width: 1024px) {
     .project-head {

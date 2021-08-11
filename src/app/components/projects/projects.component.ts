@@ -28,7 +28,7 @@ export class ProjectsComponent implements OnInit, AfterViewInit {
           else {
             clearInterval()
           }
-        }, 15)
+        }, 20)
       }
     })
   }
