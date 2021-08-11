@@ -2,7 +2,8 @@
     background: url('../../../assets/bg/849790.gif');
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: fill;
+    background-size: cover;
+    background-position: center;
 }
 
 .project-head div:first-child {
@@ -40,12 +41,6 @@
 }
 .github-link:hover {
     box-shadow: 0 0 50px var(--purple);
-}
-
-@media screen and (max-width: 1024px) {
-    .project-head {
-        background-position: 50%;
-    }
 }
 
 @media screen and (max-width: 700px) {
