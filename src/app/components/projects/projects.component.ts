@@ -15,12 +15,13 @@ export class ProjectsComponent implements OnInit, AfterViewInit {
   ngOnInit() {
   }
   ngAfterViewInit() {
-    this.runNumberAnimation()
+    const elementOffset = document.getElementById('project-head').offsetTop
+    this.runNumberAnimation(elementOffset)
   }
 
-  runNumberAnimation() {
+  runNumberAnimation(elementOffset: number) {
     window.addEventListener('scroll', () => {
-      if (window.pageYOffset > 3000) {
+      if (window.pageYOffset > elementOffset - 300) {
         setInterval(() => {
           if (this.contributions < this.numberOfProjects) {
             this.contributions += 1
