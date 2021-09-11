@@ -1,29 +1,341 @@
-.contact-us {
-    padding: 0 10%;
+.box {
+    height: 20vh;
+    width: 20vh;
+
+    position: absolute;
+    z-index: 2;
 }
-.social-accounts {
-    font-size: 2rem;
+#box-1 {
+    background-color: var(--green);
+    top: 40%;
+    left: 70%;
+    transform: rotate(20deg);
+
+    animation-name: box-1-animation;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+#box-2 {
+    background-color: var(--blue);
+    top: 10%;
+    left: 20%;
+    transform: rotate(70deg);
+
+    animation-name: box-2-animation;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+#box-3 {
+    background-color: var(--voilet);
+    top: 80%;
+    left: 10%;
+    transform: rotate(-50deg);
+
+    animation-name: box-3-animation;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+
+#box-4 {
+    background-color: var(--purple);
+    top: 0%;
+    left: 50%;
+    transform: rotate(120deg);
+
+    animation-name: box-4-animation;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+#box-5 {
+    background-color: var(--green);
+    top: 90%;
+    left: 45%;
+    transform: rotate(70deg);
+
+    animation-name: box-5-animation;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+#box-6 {
+    background-color: var(--blue);
+    top: 10%;
+    left: 80%;
+    transform: rotate(70deg);
+
+    animation-name: box-6-animation;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+#box-7 {
+    background-color: var(--voilet);
+    top: 90%;
+    left: 90%;
+    transform: rotate(100deg);
+
+    animation-name: box-7-animation;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+#box-8 {
+    background-color: var(--purple);
+    top: 5%;
+    left: 0%;
+    transform: rotate(-70deg);
+
+    animation-name: box-8-animation;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+.contact {
+    padding: 12vh 10%;
+    z-index: 10; 
+
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.heading-spacing {
+    word-spacing: 5px;
 }
 .icon-size {
-    height: 10vh;
-    width: 10vh;
-    border-radius: 50%;
+    height: 3em;
+    width: 3em;
+}
 
-    object-fit: contain;
-}
 @media screen and (max-width: 700px) {
-    .contact-us > h1 {
-        font-size: 3.2rem;
-    }
-    .contact-us {
-        padding: 0 5%;
-    }
-    .social-accounts {
-        font-size: 1.5rem;
+    h1 {
+        font-size: 2rem;
     }
 }
-@media screen and (max-width: 320px) {
-    .contact-us > h1 {
-        font-size: 2rem;
+
+@keyframes box-1-animation {
+    0% {
+        top: 43%;
+        left: 67%;
+        transform: rotate(25deg);
+    }
+    25% {
+        top: 45%;
+        left: 70%;
+        transform: rotate(17deg);
+    }
+    50% {
+        top: 41%;
+        left: 72%;
+        transform: rotate(20deg);
+    }
+    75% {
+        top: 45%;
+        left: 75%;
+        transform: rotate(22deg);
+    }
+    100% {
+        top: 40%;
+        left: 72%;
+        transform: rotate(15deg);
+    }
+}
+
+@keyframes box-2-animation {
+    0% {
+        top: 15%;
+        left: 15%;
+        transform: rotate(60deg);
+    }
+    25% {
+        top: 25%;
+        left: 20%;
+        transform: rotate(65deg);
+    }
+    50% {
+        top: 8%;
+        left: 13%;
+        transform: rotate(80deg);
+    }
+    75% {
+        top: 20%;
+        left: 22%;
+        transform: rotate(100deg);
+    }
+    100% {
+        top: 13%;
+        left: 10%;
+        transform: rotate(75deg);
+    }
+}
+@keyframes box-3-animation {
+    0% {
+        top: 85%;
+        left: 7%;
+        transform: rotate(-80deg);
+    }
+    25% {
+        top: 72%;
+        left: 20%;
+        transform: rotate(-65deg);
+    }
+    50% {
+        top: 80%;
+        left: 15%;
+        transform: rotate(-50deg);
+    }
+    75% {
+        top: 85%;
+        left: 20%;
+        transform: rotate(-60deg);
+    }
+    100% {
+        top: 77%;
+        left: 10%;
+        transform: rotate(-75deg);
+    }
+}
+@keyframes box-4-animation {
+    0% {
+        top: -10%;
+        left: 55%;
+        transform: rotate(100deg);
+    }
+    25% {
+        top: 7%;
+        left: 45%;
+        transform: rotate(80deg);
+    }
+    50% {
+        top: 15%;
+        left: 52%;
+        transform: rotate(140deg);
+    }
+    75% {
+        top: 8%;
+        left: 40%;
+        transform: rotate(100deg);
+    }
+    100% {
+        top: -5%;
+        left: 45%;
+        transform: rotate(140deg);
+    }
+}
+@keyframes box-5-animation {
+    0% {
+        top: 85%;
+        left: 55%;
+        transform: rotate(55deg);
+    }
+    25% {
+        top: 82%;
+        left: 49%;
+        transform: rotate(65deg);
+    }
+    50% {
+        top: 92%;
+        left: 45%;
+        transform: rotate(80deg);
+    }
+    75% {
+        top: 93%;
+        left: 50%;
+        transform: rotate(100deg);
+    }
+    100% {
+        top: 87%;
+        left: 60%;
+        transform: rotate(75deg);
+    }
+}
+@keyframes box-6-animation {
+    0% {
+        top: 5%;
+        left: 90%;
+        transform: rotate(60deg);
+    }
+    25% {
+        top: 12%;
+        left: 85%;
+        transform: rotate(65deg);
+    }
+    50% {
+        top: 15%;
+        left: 95%;
+        transform: rotate(80deg);
+    }
+    75% {
+        top: 8%;
+        left: 90%;
+        transform: rotate(100deg);
+    }
+    100% {
+        top: 13%;
+        left: 78%;
+        transform: rotate(75deg);
+    }
+}
+@keyframes box-7-animation {
+    0% {
+        top: 85%;
+        left: 95%;
+        transform: rotate(60deg);
+    }
+    25% {
+        top: 87%;
+        left: 87%;
+        transform: rotate(65deg);
+    }
+    50% {
+        top: 94%;
+        left: 85%;
+        transform: rotate(80deg);
+    }
+    75% {
+        top: 98%;
+        left: 90%;
+        transform: rotate(100deg);
+    }
+    100% {
+        top: 90%;
+        left: 85%;
+        transform: rotate(75deg);
+    }
+}
+@keyframes box-8-animation {
+    0% {
+        top: 15%;
+        left: -5%;
+        transform: rotate(-60deg);
+    }
+    25% {
+        top: 10%;
+        left: 7%;
+        transform: rotate(-65deg);
+    }
+    50% {
+        top: -10%;
+        left: 5%;
+        transform: rotate(-80deg);
+    }
+    75% {
+        top: 0%;
+        left: 0%;
+        transform: rotate(-100deg);
+    }
+    100% {
+        top: 20%;
+        left: -10%;
+        transform: rotate(-75deg);
     }
 }
