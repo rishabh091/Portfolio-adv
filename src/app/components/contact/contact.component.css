@@ -102,6 +102,18 @@
     animation-direction: alternate;
     animation-timing-function: linear;
 }
+#box-9 {
+    background-color: var(--blue);
+    top: 50%;
+    left: 50%;
+    transform: rotate(-70deg);
+
+    animation-name: box-9-animation;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
 .contact {
     padding: 12vh 10%;
     z-index: 10; 
@@ -114,6 +126,10 @@
 .icon-size {
     height: 3em;
     width: 3em;
+}
+.tech-icons {
+    height: 1.5em;
+    width: 1.5em;
 }
 
 @media screen and (max-width: 700px) {
@@ -336,6 +352,33 @@
     100% {
         top: 20%;
         left: -10%;
+        transform: rotate(-75deg);
+    }
+}
+@keyframes box-9-animation {
+    0% {
+        top: 55%;
+        left: 55%;
+        transform: rotate(-60deg);
+    }
+    25% {
+        top: 57%;
+        left: 53%;
+        transform: rotate(-65deg);
+    }
+    50% {
+        top: 55%;
+        left: 47%;
+        transform: rotate(-80deg);
+    }
+    75% {
+        top: 60%;
+        left: 55%;
+        transform: rotate(-100deg);
+    }
+    100% {
+        top: 55%;
+        left: 47%;
         transform: rotate(-75deg);
     }
 }
