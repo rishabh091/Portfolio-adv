@@ -27,7 +27,8 @@
     object-position: left;
 }
 .about-me-para {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+    word-spacing: 5px;
 }
 .about-me-content {
     padding: 0 10%;
