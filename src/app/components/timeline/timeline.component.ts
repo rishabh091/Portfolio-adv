@@ -19,7 +19,7 @@ export class TimelineComponent implements OnInit {
         'Develop complete scalable features in a distributed environment consisting over 6 microservices.',
         'Resolve time sensitive bugs and make overall application more accessible (WCAG 2.0 Level AA completed, aiming for WCAG 2.0 Level AAA) for people with disabilities to streamline user experience.',
         'Optimise essential apis by streamlining blocking processes for a more polished experience.',
-        'Create complex user facing, accessible components used by over 32+ universities with user count.'
+        'Create complex user facing, accessible components used by over 32+ universities.'
       ]
     },
     {
