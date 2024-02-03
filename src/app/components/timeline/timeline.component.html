@@ -1,0 +1,25 @@
+<div class="container-fluid text-white">
+    <div *ngFor="let exp of timeline" class="row mt-5 mb-5">
+        <div class="col-sm-4 text-muted">
+            <span>{{exp.startDate}}</span> - 
+            <span *ngIf="exp.isPresent">PRESENT</span>
+            <span *ngIf="!exp.isPresent && exp.endDate">{{exp.endDate}}</span>
+        </div>
+
+        <div class="col-sm-8">
+            <div *ngFor="let title of exp.titles; let i = index">
+                <h5 *ngIf="i == 0">
+                    {{title}} - <a [href]="exp.link" target="_blank" class="text-purple">{{exp.company}}</a>
+                </h5>
+                <h6 *ngIf="i > 0" class="text-muted">{{title}}</h6>
+            </div>
+            <div>
+                <ul class="pl-0 mt-4 mb-2">
+                    <li *ngFor="let point of exp.points" class="mb-2">
+                        {{point}}
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

@@ -6,9 +6,8 @@
     background-position: center;
 }
 
-.project-head div:first-child {
+.project-head-wrapper {
     background: rgba(0, 0, 0, 0.8);
-    width: 100%;
 }
 
 .project-heading {
@@ -42,6 +41,10 @@
 .github-link:hover {
     box-shadow: 0 0 50px var(--purple);
 }
+.project-block {
+    margin-top: 12vh;
+    margin-bottom: 12vh;
+}
 
 @media screen and (max-width: 700px) {
     .project-heading {
@@ -49,5 +52,9 @@
     }
     .project-subheading {
         font-size: 2rem;
+    }
+    .project-block {
+        margin-top: 0;
+        margin-bottom: 0;
     }
 }
