@@ -9,9 +9,23 @@ export class TimelineComponent implements OnInit {
 
   timeline = [
     {
-      startDate: '12/2022',
+      startDate: '05/2024',
       isPresent: true,
       endDate: '',
+      titles: ['Senior Software Engineer'],
+      company: 'Blusmart',
+      link: 'https://blu-smart.com/en-IN/',
+      points: [
+        'Developed a Progressive Web Application (PWA) for one of their job card management tools, which is utlised by over 5000+ workshop users.',
+        'Optimised and migrated Node.js servers to Bun, achieveing over 300% memory savings and reducing latency by 1.5x.',
+        'Responsible for creating an organisation wide private npm registry for custom package caching.',
+        'Developed impactful features that optimized workflows, enhanced communication, and reduced reliance on third-party software, cutting software costs by 27%.'
+      ]
+    },
+    {
+      startDate: '12/2022',
+      isPresent: false,
+      endDate: '05/2024',
       titles: ['Full Stack Developer'],
       company: 'PeopleGrove',
       link: 'https://www.peoplegrove.com/',
